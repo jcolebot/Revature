@@ -75,6 +75,17 @@ public class Dish {
         List<Dish> dishList = Dish.menu;
         List<String> dishNames = getLowCalDishes(dishList);
         System.out.println(dishNames);
+
+        // stream example
+        String[] menuLine = {
+                "pizza,bread sticks,calzone",
+                "fries,burger,pickles",
+                "veggie bowl,fried rice"
+        };
+        Arrays
+                .stream(menuLine)
+                .flatMap(line -> Arrays.stream(line.split(",")))
+                .forEach(System.out::println);
     }
 }
 
