@@ -1,0 +1,19 @@
+Four standard functional interfaces:
+
+* Predicate
+    * Boolean
+* Supplier
+    * Returns output only
+* Consumer
+    * Returns void
+* Function
+    * Returns different type of output
+
+BiFunctions
+
+* BiFunction
+    * multiple inputs different output
+* BiPredicate
+    * multiple inputs returns boolean
+* BiConsumer
+    * multiple inputs returns void
