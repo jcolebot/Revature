@@ -24,7 +24,7 @@ public class LinkedList {
         Node newNode = new Node(data);
         // check if list is empty
         if(head == null) {
-            // if list is head and tail points to new node
+            // head and tail points to new node
             head = newNode;
             tail = newNode;
         }
@@ -53,7 +53,7 @@ public class LinkedList {
         }
         System.out.println(); // line break
     }
-    // main method
+
     public static void main(String[] args) {
         LinkedList sList = new LinkedList();
 

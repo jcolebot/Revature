@@ -28,9 +28,10 @@ public class IO_MapExample {
             }
         }
         // declarative style solution
-       /* Map<String, DoubleSummaryStatistics> map = Files.lines(Paths.get("practice-with-java/src/revature/report"))
-                        .map(line -> line.split(",")).collect(Collectors.groupingBy(tokens -> tokens[1],
-                        Collectors.summarizingDouble())); */
+//       Map<String, DoubleSummaryStatistics> map = Files.lines(Paths.get("practice-with-java/src/revature/report"))
+//                        .map(line -> line.split(",")).collect(Collectors.groupingBy(tokens -> tokens[1],
+//                        Collectors.summarizingDouble(tokens -> Double.parseDouble(tokens[2]))));
+
         System.out.println(map);
         scanner.close();
     }
