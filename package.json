@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "webpack-cli": "^4.9.1"
+  },
+  "scripts": {
+    "test": "echo",
+    "bundle": "webpack"
+  },
+  "dependencies": {
+    "revature-greeting-nov": "^2.0.0"
+  }
+}
