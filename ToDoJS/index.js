@@ -1,17 +1,17 @@
 let todoItems = [];
-
+// Display todo list
 function renderTodo(todo) {
   localStorage.setItem('todoItems', JSON.stringify(todoItems));
 
   const list = document.querySelector('.js-todo-list');
   const item = document.querySelector(`[data-key='${todo.id}']`);
-  
+  // Remove todo from display
   if (todo.deleted) {
     item.remove();
     if (todoItems.length === 0) list.innerHTML = '';
     return
   }
-
+  // Check off todo when completed
   const isChecked = todo.checked ? 'done': '';
   const node = document.createElement("li");
   node.setAttribute('class', `todo-item ${isChecked}`);
@@ -31,7 +31,7 @@ function renderTodo(todo) {
     list.append(node);
   }
 }
-
+// Add todo to list using timestamp as a unique id
 function addTodo(text) {
   const todo = {
     text,
