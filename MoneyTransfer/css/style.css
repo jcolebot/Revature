@@ -10,9 +10,9 @@ html,
 body {
     background-color: #daddfc;
     color: #333;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 300;
     font-size: 20px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
     text-rendering: optimizeLegibility;
 }
 
@@ -28,32 +28,44 @@ h1 {
     margin-bottom: 25px;
     color: #fff;
     font-size: 250%;
+    font-family: Georgia, "Times New Roman", Times, serif;
     word-spacing: 3px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 h2 {
     font-size: 180%;
     word-spacing: 2px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     text-align: center;
     margin-bottom: 30px;
 }
 
 h3 {
-    font-size: 115%;
+    font-size: 90%;
     margin-bottom: 30px;
-    color: #f2f013;
+    color: #fff323;
+}
+
+p {
+    line-height: 1.5rem;
 }
 
 section {
     padding: 60px 0;
 }
 
+ul {
+    list-style: none;
+}
+
 /* Reusable Classes */
 
 .container {
     padding: 15px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
 }
 
 .row {
@@ -64,7 +76,7 @@ section {
 /* Header */
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
         url(resources/jonathan-cooper-0O2Pp6-mOkY-unsplash.jpg);
     background-size: cover;
     background-position: center;
@@ -82,11 +94,10 @@ header {
 .logo {
     float: left;
     margin-top: 50px;
-    color: #fff;
 }
 
 .logo:hover {
-    color: #f2f013;
+    color: #fff323;
     transition: 0.2s;
     cursor: pointer;
 }
@@ -116,7 +127,7 @@ header {
 .main-nav li a:hover,
 .main-nav li:active {
     cursor: pointer;
-    color: #f2f013;
+    color: #fff323;
     transition: 0.2s;
 }
 
@@ -124,7 +135,7 @@ header {
 
 a:link,
 a:visited {
-    color: #396eb0;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -157,27 +168,43 @@ input[type="submit"] {
     margin-right: 15px;
 }
 
-.btn-ghost:link,
-.btn-ghost:visited {
-    border: 1px solid #fff;
-}
-
 .btn-full:hover,
 .btn-full:active,
 input[type="submit"] {
     border: 1px solid #396eb0;
 }
 
-.btn-ghost:hover,
-.btn-ghost:active {
-    border: 1px solid #396eb0;
-    color: #fff;
+/* Sections */
+
+.login-section {
+    height: 80vh;
+    background-color: #fff;
 }
 
-/* Login Form */
+.about-section {
+    color: #2e4c6d;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 75vh;
+    padding: 0 2rem;
+}
+
+.contact-section a {
+    background-color: #2e4c6d;
+}
+
+/* Login */
 
 label {
-    color: #fff;
+    color: #111;
+    width: 75%;
 }
 
 .login-form {
@@ -185,7 +212,11 @@ label {
     margin: auto;
     border: 1px solid #396eb0;
     border-radius: 25px;
-    background-color: #396eb0;
+    background-color: #999;
+}
+
+.login-msg-line2 {
+    display: block;
 }
 
 input[type="email"],
@@ -217,7 +248,7 @@ footer {
 }
 
 .footer-logo:hover {
-    color: #daddfc;
+    color: #fff323;
     transition: 0.2s;
     cursor: pointer;
 }
@@ -242,7 +273,7 @@ footer {
 
 .footer-nav li a:hover,
 .footer-nav li a:active {
-    color: #f2f013;
+    color: #fff323;
 }
 
 footer p {

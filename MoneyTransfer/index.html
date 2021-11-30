@@ -5,17 +5,28 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Money Transfer Homepage</title>
-        <link rel="stylesheet" href="style.css" />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="css/style.css" />
+
+        <!-- Icons -->
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+            crossorigin="anonymous"
+        />
     </head>
     <body>
+        <!-- Hero Section -->
         <header>
             <nav>
                 <div class="row">
-                    <p class="logo">MoneyTransferBank.com</p>
+                    <a class="logo" href="index.html">MoneyTransferBank.com</a>
                     <ul class="main-nav">
                         <li><a href="#login">Login</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
                         <li><a href="#">Sign up</a></li>
                     </ul>
                 </div>
@@ -28,17 +39,66 @@
                 </h1>
                 <h3>Where transferring money is safe and easy</h3>
                 <div class="row">
-                    <a class="btn btn-full" href="#login">Login</a>
-                    <a class="btn btn-ghost" href="#">Sign up</a>
+                    <a class="btn btn-full" href="#login">&nbsp Login &nbsp</a>
+                    <a class="btn btn-full" href="#">Sign up</a>
                 </div>
             </div>
         </header>
 
-        <section class="login" id="login">
+        <!-- About Us Section -->
+        <section class="about-section" id="about">
+            <div>
+                <h2 class="row">What We Do</h2>
+            </div>
+
+            <div class="container">
+                <p>
+                    Maecenas rutrum urna vitae urna scelerisque sollicitudin.
+                    Aenean nec nibh quis justo rhoncus elementum. Phasellus
+                    feugiat massa quis dolor aliquet sollicitudin. Duis massa
+                    tortor, imperdiet ornare dictum eget, pharetra eu orci. Sed
+                    molestie augue vehicula nibh vestibulum rhoncus.
+                    Pellentesque convallis lacus pulvinar nisl mollis, vitae
+                    blandit odio vestibulum. Duis maximus velit a massa
+                    consequat dictum. Donec quis vulputate felis, eget lacinia
+                    quam.
+                    <br />
+                    <br />
+                    Proin pharetra orci in lacus placerat, a auctor risus
+                    gravida. Vivamus volutpat fermentum arcu, sed dapibus neque
+                    mattis quis. Nunc egestas auctor ornare. Sed lobortis urna
+                    vel eros egestas commodo. Quisque molestie congue dignissim.
+                    In pharetra diam risus, nec vestibulum orci ultrices in.
+                    Donec sed tellus in felis luctus consequat. Donec vel enim
+                    orci. Sed condimentum velit eu nulla dictum congue.
+                    Phasellus consequat dictum mi nec cursus. Donec et magna
+                    tincidunt, consectetur metus ut, semper eros. Aliquam
+                    venenatis ex at mi interdum, id pulvinar ante rutrum.
+                    <br />
+                    <br />
+                    Fusce placerat finibus felis. Aenean id pulvinar enim,
+                    pellentesque vehicula odio. Praesent mollis at tortor et
+                    pellentesque. Cras ultrices consectetur malesuada.
+                    Suspendisse pharetra magna vel tincidunt finibus. Donec at
+                    elementum mi. Sed pretium nisl ante, at faucibus ipsum
+                    vehicula at. Aliquam erat volutpat. Nunc fermentum
+                    ullamcorper leo eu hendrerit. Praesent sagittis laoreet
+                    vulputate. Cras fringilla lobortis sagittis. In congue
+                    gravida feugiat. Praesent aliquet quam quis sodales gravida.
+                    Ut quam nibh, lacinia vitae placerat a, varius sed neque.
+                    Quisque auctor pulvinar est, nec pharetra dui convallis non.
+                    Nulla ultrices eu eros nec auctor.
+                </p>
+            </div>
+        </section>
+
+        <!-- Login Section -->
+        <section class="login-section" id="login">
             <div class="row">
                 <h2>Log in to get started</h2>
             </div>
-            <form class="login-form" action="#" method="post">
+
+            <form class="login-form" id="login-form" action="#" method="post">
                 <div class="container">
                     <label for="email"><strong>Email</strong></label>
                     <input
@@ -55,39 +115,51 @@
                         name="password"
                         required
                     />
-                    <div class="container">
-                        <a class="btn btn-full" href="#">Submit</a>
-                        <a class="btn btn-ghost" href="#">Sign up</a>
+                    <div class="row">
+                        <a class="btn btn-full" id="login-form-submit" href="#"
+                            >Submit</a
+                        >
+                        <a class="btn btn-full" href="#">Sign up</a>
                     </div>
                 </div>
             </form>
-            <!-- <form action="#" class="login-form">
-                <div class="">
-                    <label for="email">Email</label>
-
-                    <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="enter email"
-                        required
-                    />
-
-                    <label for="password">Password</label>
-
-                    <input
-                        type="password"
-                        name="password"
-                        id="password"
-                        placeholder="enter password"
-                        required
-                    />
-                    <a class="btn btn-full" href="#login">Submit</a>
-                    <a class="btn btn-ghost" href="#">Sign up</a>
-                </div>
-            </form> -->
         </section>
 
+        <section class="contact-section" id="contact">
+            <div>
+                <h2>Contact Us</h2>
+            </div>
+            <div>
+                <div class="contact-links">
+                    <a
+                        href="https://facebook.com/freecodecamp"
+                        target="_blank"
+                        class="btn contact-details"
+                        ><i class="fab fa-facebook-square"></i> Facebook</a
+                    >
+                    <a
+                        id="profile-link"
+                        href="https://instagram.com"
+                        target="_blank"
+                        class="btn contact-details"
+                        ><i class="fab fa-instagram-square"></i> Instagram</a
+                    >
+                    <a
+                        href="https://twitter.com/freecodecamp"
+                        target="_blank"
+                        class="btn contact-details"
+                        ><i class="fab fa-twitter"></i> Twitter</a
+                    >
+                    <a
+                        href="mailto:example@example.com"
+                        class="btn contact-details"
+                        ><i class="fas fa-at"></i> Email</a
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
         <footer>
             <p class="footer-logo">MoneyTransferBank.com</p>
             <div class="row">
@@ -107,5 +179,11 @@
 
         <!-- Main JS File -->
         <script src="main.js"></script>
+
+        <!-- Font Awesome Icons -->
+        <script
+            src="https://kit.fontawesome.com/d9c51b1795.js"
+            crossorigin="anonymous"
+        ></script>
     </body>
 </html>

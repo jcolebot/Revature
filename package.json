@@ -7,6 +7,8 @@
     "bundle": "webpack"
   },
   "dependencies": {
+    "@angular/cli": "^13.0.3",
+    "bootstrap": "^5.1.3",
     "revature-greeting-nov": "^2.0.0"
   }
 }
