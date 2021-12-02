@@ -5,6 +5,62 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Money Transfer Dashboard</title>
+        <!-- Styles -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/dashboard.css" />
     </head>
-    <body></body>
+    <body>
+        <div class="row">
+            <h1 class="title-dark-blue center-text">
+                Money Transfer Bank Dashboard
+            </h1>
+        </div>
+
+        <div>
+            <!-- can use a dropdown menu here -->
+            <a href="">View Statements</a>
+            <a href="">Begin a Transfer</a>
+        </div>
+
+        <section class="most-recent">
+            <div>
+                <h2>Most Recent Transactions</h2>
+            </div>
+
+            <div>
+                <table class="transactions">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Type</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <td id="transaction-date">12-1-21</td>
+                        <td id="transaction-type">Debit</td>
+                        <td id="transaction-amount">20</td>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p class="footer-logo">MoneyTransferBank.com</p>
+            <div class="row">
+                <ul class="footer-nav">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Sign up</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <p>
+                    Copyright &copy; 2021 by Jonathan Coley. All rights
+                    reserved.
+                </p>
+            </div>
+        </footer>
+    </body>
 </html>

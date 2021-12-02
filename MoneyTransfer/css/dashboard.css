@@ -1,0 +1,32 @@
+/* CSS for Dashboard */
+
+.dash-body {
+    text-align: center;
+}
+.transactions {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.transactions td,
+.transactions th {
+    border: 1px solid #333;
+    padding: 0.5rem;
+}
+
+.transactions th {
+    padding-top: 1.3rem;
+    padding-bottom: 1.3rem;
+    font-size: 125%;
+    text-align: center;
+    background-color: #2e4c6d;
+    color: #fff;
+}
+
+.transactions tr:nth-child(even) {
+    background-color: #daddfc;
+}
+
+.transactions tr:hover {
+    background-color: #ddd;
+}

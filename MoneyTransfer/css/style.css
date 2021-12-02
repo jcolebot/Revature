@@ -8,11 +8,11 @@
 
 html,
 body {
-    background-color: #daddfc;
+    background-color: #fff;
     color: #333;
     font-weight: 300;
     font-size: 20px;
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Tahoma, Verdana, sans-serif;
     text-rendering: optimizeLegibility;
 }
 
@@ -26,7 +26,6 @@ h3 {
 h1 {
     margin-top: 0;
     margin-bottom: 25px;
-    color: #fff;
     font-size: 250%;
     font-family: Georgia, "Times New Roman", Times, serif;
     word-spacing: 3px;
@@ -61,6 +60,10 @@ ul {
 
 /* Reusable Classes */
 
+.center-text {
+    text-align: center;
+}
+
 .container {
     padding: 15px;
     width: 50%;
@@ -77,7 +80,7 @@ ul {
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-        url(resources/jonathan-cooper-0O2Pp6-mOkY-unsplash.jpg);
+        url(../img/jonathan-cooper-0O2Pp6-mOkY-unsplash.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -89,6 +92,16 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.title-white {
+    color: #fff;
+}
+
+.title-dark-blue {
+    color: #2e4c6d;
+    background-color: #eee;
+    border-radius: 5px;
 }
 
 .logo {
@@ -162,7 +175,7 @@ input[type="submit"] {
 .btn-full:link,
 .btn-full:visited,
 input[type="submit"] {
-    background-color: #396eb0;
+    background-color: #2e4c6d;
     border: 1px solid #fff;
     color: #fff;
     margin-right: 15px;
