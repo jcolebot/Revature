@@ -13,7 +13,7 @@ loginButton.addEventListener("click", (e) => {
     // Check email and password, then confirm with alerts
     if (userEmail === "admin@mtb.com" && password === "password") {
         alert("Your login was succesful!");
-        location.replace("file:///C:/Users/acer/Documents/Revature/MoneyTransfer/resources/dashboard.html");
+        location.replace("../MoneyTransfer/dashboard.html");
     } else {
         alert("Incorrect email and/or password.");
     }

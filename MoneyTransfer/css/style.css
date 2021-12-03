@@ -33,7 +33,7 @@ h1 {
 }
 
 h2 {
-    font-size: 180%;
+    font-size: 150%;
     word-spacing: 2px;
     letter-spacing: 2px;
     text-align: center;
@@ -42,8 +42,8 @@ h2 {
 
 h3 {
     font-size: 90%;
-    margin-bottom: 30px;
-    color: #fff323;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 p {

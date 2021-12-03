@@ -16,31 +16,42 @@
                 Money Transfer Bank Dashboard
             </h1>
         </div>
+        <h2 class="dash-heading">Start a New Transfer</h2>
+        <form class="new-transfer" id="new-transfer" action="#">
+            <label for="from-account">From Account</label>
+            <select name="from-account" id="from-account">
+                <option value="account-one">Account#: ****123</option>
+                <option value="account-two">Account#: ****456</option>
+            </select>
+            <label for="to-account">To Account</label>
+            <select name="to-account" id="to-account">
+                <option value="account-one">Account#: ****123</option>
+                <option value="account-two">Account#: ****456</option>
+            </select>
+            <a class="btn btn-full" id="transfer-form-submit" href="#"
+                >Submit</a
+            >
+        </form>
 
-        <div class="row">
-            <form class="statement-form" id="statement-form" action="#">
-                <label for="statements">View Statements</label>
-                <select name="statements" id="statements">
-                    <option value="current-month">Current Month</option>
-                    <option value="last-month">Last Month</option>
-                    <option value="three-month">Last Three Months</option>
-                </select>
-                <br />
-                <input type="submit" value="Submit" />
-            </form>
-        </div>
-
-        <div>
-            <a href="">View Statements</a>
-            <a href="">Begin a Transfer</a>
-        </div>
+        <h2 class="dash-heading">View Statements</h2>
+        <form class="statement-form" id="statement-form" action="#">
+            <label for="statements">View Statements</label>
+            <select name="statements" id="statements">
+                <option value="current-month">Current Month</option>
+                <option value="last-month">Last Month</option>
+                <option value="three-month">Last Three Months</option>
+            </select>
+            <a class="btn btn-full" id="statement-form-submit" href="#"
+                >Submit</a
+            >
+        </form>
 
         <section class="most-recent">
             <div>
                 <h2>Most Recent Transactions</h2>
             </div>
 
-            <div>
+            <div class="container">
                 <table class="transactions">
                     <thead>
                         <tr>
@@ -50,9 +61,46 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <td id="transaction-date">12-1-21</td>
-                        <td id="transaction-type">Debit</td>
-                        <td id="transaction-amount">20</td>
+                        <tr>
+                            <td id="transaction-date">12-1-21</td>
+                            <td id="transaction-type">Debit</td>
+                            <td id="transaction-amount">20</td>
+                        </tr>
+                        <tr>
+                            <td id="transaction-date">12-2-21</td>
+                            <td id="transaction-type">Debit</td>
+                            <td id="transaction-amount">40</td>
+                        </tr>
+                        <tr>
+                            <td id="transaction-date">12-2-21</td>
+                            <td id="transaction-type">Credit</td>
+                            <td id="transaction-amount">100</td>
+                        </tr>
+                        <tr>
+                            <td id="transaction-date">12-3-21</td>
+                            <td id="transaction-type">Debit</td>
+                            <td id="transaction-amount">200</td>
+                        </tr>
+                        <tr>
+                            <td id="transaction-date">12-4-21</td>
+                            <td id="transaction-type">Credit</td>
+                            <td id="transaction-amount">300</td>
+                        </tr>
+                        <tr>
+                            <td id="transaction-date">12-5-21</td>
+                            <td id="transaction-type">Debit</td>
+                            <td id="transaction-amount">100</td>
+                        </tr>
+                        <tr>
+                            <td id="transaction-date">12-8-21</td>
+                            <td id="transaction-type">Credit</td>
+                            <td id="transaction-amount">10</td>
+                        </tr>
+                        <tr>
+                            <td id="transaction-date">12-10-21</td>
+                            <td id="transaction-type">Debit</td>
+                            <td id="transaction-amount">20</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
