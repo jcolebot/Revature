@@ -1,6 +1,5 @@
 package repository;
 
-
 import account.Account;
 import database.DatabaseConnection;
 import org.apache.log4j.Logger;

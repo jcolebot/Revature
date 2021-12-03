@@ -1,8 +1,26 @@
-/* CSS for Dashboard */
+/* CSS for Dashboard Page */
 
-.dash-body {
-    text-align: center;
+/* Dashboard Nav */
+
+.dashboard-nav {
+    width: 100%;
 }
+
+/* Statement Form */
+
+/* .statement-div {
+    width: 25%;
+    display: inline-block;
+    margin: 2rem;
+}
+
+.statement-form {
+    display: table-column;
+    width: 50%;
+}
+
+/* Most Recent Transactions */
+
 .transactions {
     border-collapse: collapse;
     width: 100%;

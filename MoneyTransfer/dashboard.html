@@ -8,6 +8,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="css/style.css" />
         <link rel="stylesheet" href="css/dashboard.css" />
+        <link rel="stylesheet" href="css/grid.css" />
     </head>
     <body>
         <div class="row">
@@ -16,8 +17,20 @@
             </h1>
         </div>
 
+        <div class="row">
+            <form class="statement-form" id="statement-form" action="#">
+                <label for="statements">View Statements</label>
+                <select name="statements" id="statements">
+                    <option value="current-month">Current Month</option>
+                    <option value="last-month">Last Month</option>
+                    <option value="three-month">Last Three Months</option>
+                </select>
+                <br />
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+
         <div>
-            <!-- can use a dropdown menu here -->
             <a href="">View Statements</a>
             <a href="">Begin a Transfer</a>
         </div>
@@ -47,7 +60,7 @@
 
         <!-- Footer -->
         <footer>
-            <p class="footer-logo">MoneyTransferBank.com</p>
+            <a class="footer-logo" href="index.html">MoneyTransferBank.com</a>
             <div class="row">
                 <ul class="footer-nav">
                     <li><a href="#">About</a></li>
