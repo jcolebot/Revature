@@ -2,6 +2,11 @@ package revature;
 
 import java.util.LinkedList;
 
+// The LinkedList stores its items in "containers."
+// The list has a link to the first container and each container has a link to the next container in the list.
+// To add an element to the list, the element is placed into a new container.
+// Then that container is linked to one of the other containers in the list.
+
 // Linked List Advantages:
 // * Insertion and deletion are less expensive.
 // * Faster at inserting and deleting dynamically sized data.

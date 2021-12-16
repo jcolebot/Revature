@@ -52,7 +52,7 @@ public class Dish {
                     new Dish("salmon", false, 450, DishType.FISH));
 
     private static List<String> getLowCalDishes(List<Dish> dishList) {
-        List<Dish> lowCalDishes = new ArrayList<>();
+        List<Dish> lowCalDishes = new ArrayListExample<>();
         for (Dish d : dishList) {
             if (d.getCalories() < 500) {
                 lowCalDishes.add(d);
@@ -64,7 +64,7 @@ public class Dish {
                 return Integer.compare(o1.getCalories(), o2.getCalories());
             }
         });
-        List<String> lowCalDishName = new ArrayList<>();
+        List<String> lowCalDishName = new ArrayListExample<>();
         for (Dish dish : lowCalDishes) {
             lowCalDishName.add(dish.getName());
         }

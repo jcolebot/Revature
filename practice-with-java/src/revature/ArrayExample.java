@@ -1,7 +1,7 @@
 package revature;
 import java.util.Arrays;
 
-public class ArrayPractice {
+public class ArrayExample {
     public static void main(String[] args) {
         // create a new array
         int[] userAge;
